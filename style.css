@@ -1,0 +1,618 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  background-color: #191919;
+}
+
+
+p {
+  font-size: 90px;
+}
+
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 26px;
+}
+
+.left-section {
+  color: #FFFFFF;
+  margin-top: 29px;
+  margin-left: 50px;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+.right-section {
+  color: white;
+  font-size: 17px;
+  margin-right: 73px;
+  margin-top: 28px;
+  justify-content: center;
+}
+
+.home {
+  cursor: pointer;
+}
+
+.home:hover {
+  color: #118ad8;
+}
+
+.episodes {
+  margin-left: 38px;
+  margin-right: 39px;
+  cursor: pointer;
+}
+
+.episodes:hover {
+  color: #118ad8;
+}
+
+.about {
+  margin-right: 39px;
+  cursor: pointer;
+}
+
+.about:hover {
+  color: #118ad8;
+}
+
+.contact {
+  cursor: pointer;
+}
+
+.contact:hover {
+  color: #118ad8;
+}
+
+main {
+  flex: 1;
+}
+
+.main-title {
+  display: flex;
+  padding-top: 43px;
+  margin-bottom: 30px;
+}
+
+.main-hero-stroke {
+  position: absolute;
+  top: 135px;
+  left: 45px;
+  z-index: 5;
+}
+
+.hero-listening-music {
+  position: relative;
+  display: inline;
+  height: 870px;
+  max-width: 650px;
+  margin-left: 71px;
+  border-radius: 12px;
+}
+
+.main-description {
+  position: relative;
+  color: white;
+  font-size: 70px;
+  font-weight: 440;
+  line-height: 88px;
+  max-width: 526px;
+  margin-top: 294px;
+  margin-left: 63px;
+  letter-spacing: 5.5px;
+  word-spacing: 2px;
+}
+
+.stroke {
+  position: absolute;
+  top: 630px;
+  left: 780px;
+}
+
+.word-level {
+  font-weight: bold;
+  font-size: 80px;
+  margin-left: 11px;
+  letter-spacing: 3.2px;
+}
+
+.pins {
+  margin-top: 89px;
+  margin-left: 83px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pins-description {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.pin-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.pin-item {
+  width: 32px;
+  height: 32px;
+  margin-left: 16px;
+  margin-top: 2px;
+}
+
+.pin-item:first-child {
+  margin-left: 0;
+}
+
+.pin-item:last-child {
+  width: 30px;
+  height: 30px;
+  border-radius: 55px;
+}
+
+.latest-episodes {
+  display: flex;
+  align-items: center;
+}
+
+.latest-episode-description {
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 6.4px;
+  line-height: 79.2px;
+  color: white;
+  margin-left: 70px;
+}
+
+.buttons-description {
+  display: inline-block;
+  margin-top: 92px;
+  margin-left: 380px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.view-all-episodes-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 17px;
+  width: 170px;
+  height: 45px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  position: relative;
+  left: 7px;
+  cursor: pointer;
+}
+
+.view-all-episodes-button:hover {
+  background-color: #118ad8;
+}
+
+.gear-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 17px;
+  width: 80px;
+  height: 45px;
+  border: none;
+  position: relative;
+  left: 4px;
+  cursor: pointer;
+}
+
+.gear-button:hover {
+  background-color: #118ad8;
+}
+
+.tips-tricks-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 17px;
+  width: 140px;
+  height: 45px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.tips-tricks-button:hover {
+  background-color: #118ad8;
+}
+
+.episodes-items {
+  padding-bottom: 160px;
+}
+
+.episodes-item {
+  display: flex;
+  background-color: black;
+  width: 1300px;
+  height: 545px;
+  margin: 11px 110px 60px 70px;
+  border-radius: 30px;
+}
+
+.episodes-item.gear {
+  height: 512px;
+}
+
+.episodes-img {
+  max-width: 389px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.episode-description {
+  margin-left: 53px;
+}
+
+.episode-gear-button {
+  margin: 48px 0 48px 0;
+  width: 72px;
+  height: 28px;
+  font-size: 18px;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.episode-3-number {
+  color: #118DA8;
+  font-size: 17px;
+  margin-bottom: 19px;
+}
+
+.title-episode-3 {
+  color: white;
+  margin-bottom: 31px;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 5.8px;
+  line-height: 70.4px;
+}
+
+.title-episode-3.gear {
+  width: 676px;
+}
+
+.episode-about {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 18px;
+}
+
+.episode-about.gear {
+  width: 773px;
+}
+
+.episode-button {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  width: 208px;
+  height: 51px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.episode-button:hover {
+  background-color: #118ad8;
+}
+
+.tips-ans-tricks-episode-2 {
+  display: flex;
+  background-color: black;
+  width: 1300px;
+  height: 545px;
+  margin: 11px 110px 60px 70px;
+  border-radius: 30px;
+}
+
+.microphone-episode-2 {
+  width: 390px;
+  height: 430px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.episode-tips-and-tricks-button {
+  margin: 45px 0 52px 0;
+  padding: 7px 16px 4px 8px;
+  width: 136px;
+  height: 27px;
+  font-size: 17px;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.description-episode-2 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 18px;
+  margin-left: 50px;
+  padding-right: 12px;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.gear-episode-1 {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  height: 510px;
+  margin-top: 16px;
+  margin-bottom: 200px;
+  margin-left: 110px;
+  margin-right: 110px;
+  border-radius: 30px;
+}
+
+.hero-create-podcast {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.host {
+  display: flex;
+  flex-direction: row;
+  padding-top: 36px;
+}
+
+.host-description {
+  padding-left: 70px;
+  width: 620px;
+  margin-right: 60px;
+  padding-top: 64px;
+}
+
+.arrow {
+  margin-top: 88px;
+}
+
+.host-arrow {
+  width: 112px;
+  height: 112px;
+  margin-bottom: 20px;
+}
+
+.host-title {
+  color: #118DA8;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.host-name {
+  color: white;
+  font-size: 65px;
+  line-height: 79.2px;
+  letter-spacing: 6px;
+  margin-bottom: 32px;
+}
+
+.about-host {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.host-image {
+  width: 690px;
+  height: 745px;
+  padding-left: 40px;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: black;
+  width: 1300px;
+  height: 387px;
+  margin-top: 202px;
+  margin-bottom: 200px;
+  margin-left: 70px;
+  margin-right: 110px;
+  border-radius: 30px;
+}
+
+.subsciption-stroke {
+  position: absolute;
+  top: 320px;
+  left: -35px;
+}
+
+.subscription-items {
+  padding-left: 60px;
+  padding-top: 62px;
+  width: 642px;
+}
+
+.email-news {
+  color: #118DA8;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.subscribe {
+  color: white;
+  width: 400px;
+  font-size: 72px;
+  line-height: 79.2px;
+  letter-spacing: 4.9px;
+  margin-top: 0;
+}
+
+.form {
+  margin-left: 76px;
+  margin-top: 60px;
+}
+
+input[type="text"] {
+  width: 522px;
+  height: 82px;
+  padding-top: 2px;
+  padding-left: 19px;
+  border: none;
+  border-radius: 6px;
+  background-color: #191919;
+  color: white;
+  font-size: 24px;
+}
+
+input[type="email"] {
+  width: 522px;
+  height: 82px;
+  margin-top: 20px;
+  padding-top: 2px;
+  padding-left: 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #191919;
+  color: white;
+  font-size: 24px;
+}
+
+input[type="submit"] {
+  width: 87px;
+  height: 48px;
+  margin-top: 20px;
+  padding-top: 2px;
+  padding-left: 3px;
+  border: none;
+  border-radius: 6px;
+  background-color: #118ad8;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.comments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 1300px;
+  margin-left: 70px;
+  justify-items: center;
+  gap: 16px;
+  padding-bottom: 100px;
+}
+
+.comments-items {
+  background-color: black;
+  height: 321px;
+  width: 423px;
+  color: white;
+  border-radius: 25px;
+}
+
+.image-star {
+  display: grid;
+  grid-template-columns: repeat(5, 18px);
+  gap: 5px;
+  margin-top: 54px;
+  margin-left: 50px;
+}
+
+.comment-description {
+  font-size: 36px;
+  padding-top: 21px;
+  padding-bottom: 19px;
+  padding-left: 50px;
+  line-height: 43.2px;
+  letter-spacing: 1px;
+}
+
+.comment-author {
+  font-size: 20px;
+  color: rgb(255, 255, 255, 0.7);
+  padding-left: 50px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  height: 387px;
+  margin-left: 70px;
+  margin-right: 110px;
+  border-radius: 30px;
+}
+
+.footer-logo {
+  padding-top: 43px;
+  margin-bottom: 22px;
+  padding-right: 223px;
+}
+
+.footer-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 24px);
+  gap: 10px;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-header {
+  display: grid;
+  grid-template-rows: repeat(4, 27px);
+  gap: 11px;
+  padding: 43px 119px 0 16px;
+}
+
+.footer-header-item {
+  color: white;
+  font-size: 18px;
+}
+
+.footer-guide {
+  display: grid;
+  grid-template-rows: repeat(6, 27px);
+  gap: 11px;
+  padding: 43px 31px 0 0;
+}
+
+.footer-guide-item {
+  color: white;
+  font-size: 17px;
+}
+
+.pin-items.footer {
+  padding-top: 41px;
+}
